@@ -225,7 +225,7 @@
                 },
                 "execution_count": {
                     "description": "The code cell's prompt number. Will be null if the cell has not been run.",
-                    "type": ["integer", "null"],
+                    "type": ["integer", "null","string"],
                     "minimum": 0
                 }
             }
@@ -277,7 +277,7 @@
                 },
                 "execution_count": {
                     "description": "A result's prompt number.",
-                    "type": ["integer", "null"],
+                    "type": ["integer", "null","string"],
                     "minimum": 0
                 },
                 "data": {"$ref": "#/definitions/misc/mimebundle"},
@@ -393,7 +393,7 @@
             },
             "execution_count": {
                 "description": "The code cell's prompt number. Will be null if the cell has not been run.",
-                "type": ["integer", "null"],
+                "type": ["integer", "null","string"],
                 "minimum": 0
             },
             "mimebundle": {
